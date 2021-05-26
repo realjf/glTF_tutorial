@@ -1,0 +1,565 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>场景和节点 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="buffer-bufferviews-accessors.html" />
+    
+    
+    <link rel="prev" href="a-minimal-gltf-file.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="basic-gltf-structure.html">
+            
+                <a href="basic-gltf-structure.html">
+            
+                    
+                    glTF的基本结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="a-minimal-gltf-file.html">
+            
+                <a href="a-minimal-gltf-file.html">
+            
+                    
+                    最小的glTF文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4" data-path="scene-and-nodes.html">
+            
+                <a href="scene-and-nodes.html">
+            
+                    
+                    场景和节点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="buffer-bufferviews-accessors.html">
+            
+                <a href="buffer-bufferviews-accessors.html">
+            
+                    
+                    Buffer、BufferViews和Accessors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="simple-animation.html">
+            
+                <a href="simple-animation.html">
+            
+                    
+                    简单动画
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="animations.html">
+            
+                <a href="animations.html">
+            
+                    
+                    动画
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="simple-mesh.html">
+            
+                <a href="simple-mesh.html">
+            
+                    
+                    简单网格
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="meshes.html">
+            
+                <a href="meshes.html">
+            
+                    
+                    网格
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="materials.html">
+            
+                <a href="materials.html">
+            
+                    
+                    材料
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="simple-material.html">
+            
+                <a href="simple-material.html">
+            
+                    
+                    简单的材料
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="TexturesImagesSamplers.html">
+            
+                <a href="TexturesImagesSamplers.html">
+            
+                    
+                    纹理、图像和采样器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="SimpleTexture.html">
+            
+                <a href="SimpleTexture.html">
+            
+                    
+                    简单纹理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="AdvancedMaterial.html">
+            
+                <a href="AdvancedMaterial.html">
+            
+                    
+                    高级材料
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="simple-camera.html">
+            
+                <a href="simple-camera.html">
+            
+                    
+                    简单摄像机
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="cameras.html">
+            
+                <a href="cameras.html">
+            
+                    
+                    相机
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="simple-morph-target.html">
+            
+                <a href="simple-morph-target.html">
+            
+                    
+                    一个简单的变形目标
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="morph-targets.html">
+            
+                <a href="morph-targets.html">
+            
+                    
+                    变形目标
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="simple-skin.html">
+            
+                <a href="simple-skin.html">
+            
+                    
+                    简单皮肤
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="skins.html">
+            
+                <a href="skins.html">
+            
+                    
+                    皮肤
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >场景和节点</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x573A;&#x666F;&#x548C;&#x8282;&#x70B9;">&#x573A;&#x666F;&#x548C;&#x8282;&#x70B9;</h1>
+<h2 id="&#x573A;&#x666F;">&#x573A;&#x666F;</h2>
+<p>&#x53EF;&#x80FD;&#x6709;&#x591A;&#x4E2A;&#x573A;&#x666F;&#x5B58;&#x50A8;&#x5728;&#x4E00;&#x4E2A;glTF&#x6587;&#x4EF6;&#x4E2D;&#xFF0C;&#x4F46;&#x5728;&#x8BB8;&#x591A;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x573A;&#x666F;&#xFF0C;&#x8FD9;&#x4E5F;&#x662F;&#x9ED8;&#x8BA4;&#x573A;&#x666F;&#x3002;&#x6BCF;&#x4E2A;&#x573A;&#x666F;&#x5305;&#x542B;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;<code>nodes</code>&#xFF0C;&#x5B83;&#x4EEC;&#x662F;&#x573A;&#x666F;&#x56FE;&#x7684;&#x6839;&#x8282;&#x70B9;&#x7684;&#x7D22;&#x5F15;&#x3002;&#x540C;&#x6837;&#xFF0C;&#x53EF;&#x80FD;&#x6709;&#x591A;&#x4E2A;&#x6839;&#x8282;&#x70B9;&#xFF0C;&#x5F62;&#x6210;&#x4E0D;&#x540C;&#x7684;&#x5C42;&#x6B21;&#xFF0C;&#x4F46;&#x5728;&#x8BB8;&#x591A;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x573A;&#x666F;&#x5C06;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x6839;&#x8282;&#x70B9;&#x3002;&#x6700;&#x7B80;&#x5355;&#x7684;&#x573A;&#x666F;&#x63CF;&#x8FF0;&#x5DF2;&#x7ECF;&#x5728;&#x4E0A;&#x4E00;&#x8282;&#x4E2D;&#x7ED9;&#x51FA;&#xFF0C;&#x5B83;&#x7531;&#x4E00;&#x4E2A;&#x573A;&#x666F;&#x548C;&#x4E00;&#x4E2A;&#x8282;&#x70B9;&#x7EC4;&#x6210;&#xFF1A;</p>
+<pre><code class="lang-json"><span class="hljs-string">&quot;scenes&quot;</span> : [
+    {
+      <span class="hljs-string">&quot;nodes&quot;</span> : [ <span class="hljs-number">0</span> ]
+    }
+  ],
+
+  <span class="hljs-string">&quot;nodes&quot;</span> : [
+    {
+      <span class="hljs-string">&quot;mesh&quot;</span> : <span class="hljs-number">0</span>
+    }
+  ],
+</code></pre>
+<h2 id="&#x6784;&#x6210;&#x573A;&#x666F;&#x56FE;&#x7684;&#x8282;&#x70B9;">&#x6784;&#x6210;&#x573A;&#x666F;&#x56FE;&#x7684;&#x8282;&#x70B9;</h2>
+<p>&#x6BCF;&#x4E2A;<a href="https://github.com/KhronosGroup/glTF/tree/master/specification/2.0/#reference-node" target="_blank"><code>node</code></a>&#x53EF;&#x4EE5;&#x5305;&#x542B;&#x4E00;&#x4E2A;&#x540D;&#x4E3A;<code>&#x513F;&#x7AE5;</code>&#x5305;&#x542B;&#x5176;&#x5B50;&#x8282;&#x70B9;&#x7684;&#x7D22;&#x5F15;&#x7684;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x6BCF;&#x4E2A;&#x8282;&#x70B9;&#x90FD;&#x662F;&#x8282;&#x70B9;&#x5C42;&#x6B21;&#x7ED3;&#x6784;&#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#xFF0C;&#x5B83;&#x4EEC;&#x4E00;&#x8D77;&#x5C06;&#x573A;&#x666F;&#x7684;&#x7ED3;&#x6784;&#x5B9A;&#x4E49;&#x4E3A;&#x573A;&#x666F;&#x56FE;&#x3002;</p>
+<p><img src="images/sceneGraph.png" alt="sceneGraph"></p>
+<p>&#x4E2D;&#x7ED9;&#x51FA;&#x7684;&#x6BCF;&#x4E2A;&#x8282;&#x70B9;<code>scene</code>&#x53EF;&#x4EE5;&#x904D;&#x5386;&#xFF0C;&#x9012;&#x5F52;&#x8BBF;&#x95EE;&#x5176;&#x6240;&#x6709;&#x5B50;&#x8282;&#x70B9;&#xFF0C;&#x4EE5;&#x5904;&#x7406;&#x9644;&#x52A0;&#x5230;&#x8282;&#x70B9;&#x7684;&#x6240;&#x6709;&#x5143;&#x7D20;&#x3002;&#x6B64;&#x904D;&#x5386;&#x7684;&#x7B80;&#x5316;&#x4F2A;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
+<pre><code>traverse(node) {
+    // Process the meshes, cameras, etc., that are
+    // attached to this node - discussed later
+    processElements(node);
+
+    // Recursively process all children
+    for each (child in node.children) {
+        traverse(child);
+    }
+}
+</code></pre><p>&#x5B9E;&#x9645;&#x4E0A;&#xFF0C;&#x904D;&#x5386;&#x5C06;&#x9700;&#x8981;&#x4E00;&#x4E9B;&#x9644;&#x52A0;&#x4FE1;&#x606F;&#xFF1A;&#x5904;&#x7406;&#x9644;&#x52A0;&#x5230;&#x8282;&#x70B9;&#x7684;&#x67D0;&#x4E9B;&#x5143;&#x7D20;&#x5C06;&#x9700;&#x8981;&#x6709;&#x5173;<em>&#x54EA;&#x4E00;&#x4E2A;</em>&#x5B83;&#x4EEC;&#x9644;&#x52A0;&#x5230;&#x7684;&#x8282;&#x70B9;&#x3002;&#x6B64;&#x5916;&#xFF0C;&#x5728;&#x904D;&#x5386;&#x8FC7;&#x7A0B;&#x4E2D;&#x5FC5;&#x987B;&#x79EF;&#x7D2F;&#x6709;&#x5173;&#x8282;&#x70B9;&#x53D8;&#x6362;&#x7684;&#x4FE1;&#x606F;&#x3002;</p>
+<h3 id="&#x5C40;&#x90E8;&#x548C;&#x5168;&#x5C40;&#x53D8;&#x6362;">&#x5C40;&#x90E8;&#x548C;&#x5168;&#x5C40;&#x53D8;&#x6362;</h3>
+<p>&#x6BCF;&#x4E2A;&#x8282;&#x70B9;&#x90FD;&#x53EF;&#x4EE5;&#x6709;&#x4E00;&#x4E2A;&#x53D8;&#x6362;&#x3002;&#x8FD9;&#x6837;&#x7684;&#x53D8;&#x6362;&#x5C06;&#x5B9A;&#x4E49;&#x5E73;&#x79FB;&#x3001;&#x65CB;&#x8F6C;&#x548C;/&#x6216;&#x7F29;&#x653E;&#x3002;&#x6B64;&#x8F6C;&#x6362;&#x5C06;&#x5E94;&#x7528;&#x4E8E;&#x9644;&#x52A0;&#x5230;&#x8282;&#x70B9;&#x672C;&#x8EAB;&#x53CA;&#x5176;&#x6240;&#x6709;&#x5B50;&#x8282;&#x70B9;&#x7684;&#x6240;&#x6709;&#x5143;&#x7D20;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x8282;&#x70B9;&#x7684;&#x5C42;&#x6B21;&#x7ED3;&#x6784;&#x5141;&#x8BB8;&#x6784;&#x5EFA;&#x5E94;&#x7528;&#x4E8E;&#x573A;&#x666F;&#x5143;&#x7D20;&#x7684;&#x5E73;&#x79FB;&#x3001;&#x65CB;&#x8F6C;&#x548C;&#x7F29;&#x653E;&#x3002;</p>
+<h4 id="&#x8282;&#x70B9;&#x7684;&#x5C40;&#x90E8;&#x53D8;&#x6362;">&#x8282;&#x70B9;&#x7684;&#x5C40;&#x90E8;&#x53D8;&#x6362;</h4>
+<p>&#x8282;&#x70B9;&#x7684;&#x5C40;&#x90E8;&#x53D8;&#x6362;&#x6709;&#x4E0D;&#x540C;&#x7684;&#x53EF;&#x80FD;&#x8868;&#x793A;&#x5F62;&#x5F0F;&#x3002;&#x8F6C;&#x6362;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x7531;<code>matrix</code>&#x5C5E;&#x6027;&#x3002;&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x7531;16&#x4E2A;&#x6D6E;&#x70B9;&#x6570;&#x7EC4;&#x6210;&#x7684;&#x6570;&#x7EC4;&#xFF0C;&#x5B83;&#x4EEC;&#x6309;&#x5217;&#x7684;&#x4E3B;&#x8981;&#x987A;&#x5E8F;&#x63CF;&#x8FF0;&#x77E9;&#x9635;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x4E0B;&#x9762;&#x7684;&#x77E9;&#x9635;&#x63CF;&#x8FF0;&#x4E86;&#x5173;&#x4E8E;&#xFF08;2,1,0.5&#xFF09;&#x7684;&#x7F29;&#x653E;&#x3001;&#x56F4;&#x7ED5;x&#x8F74;&#x65CB;&#x8F6C;&#x7EA6;30&#x5EA6;&#x4EE5;&#x53CA;&#x5173;&#x4E8E;&#xFF08;10,20,30&#xFF09;&#x7684;&#x5E73;&#x79FB;&#xFF1A;</p>
+<pre><code class="lang-json"><span class="hljs-string">&quot;node0&quot;</span>: {
+    <span class="hljs-string">&quot;matrix&quot;</span>: [
+        <span class="hljs-number">2.0</span>,    <span class="hljs-number">0.0</span>,    <span class="hljs-number">0.0</span>,    <span class="hljs-number">0.0</span>,
+        <span class="hljs-number">0.0</span>,    <span class="hljs-number">0.866</span>,  <span class="hljs-number">0.5</span>,    <span class="hljs-number">0.0</span>,
+        <span class="hljs-number">0.0</span>,   <span class="hljs-number">-0.25</span>,   <span class="hljs-number">0.433</span>,  <span class="hljs-number">0.0</span>,
+       <span class="hljs-number">10.0</span>,   <span class="hljs-number">20.0</span>,   <span class="hljs-number">30.0</span>,    <span class="hljs-number">1.0</span>
+    ]
+}
+</code></pre>
+<p>&#x6B64;&#x5904;&#x5B9A;&#x4E49;&#x7684;&#x77E9;&#x9635;&#x5982;&#x56FE;4b&#x6240;&#x793A;&#x3002;</p>
+<p><img src="images/matrix.png" alt="img"></p>
+<p>&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>translation</code> ,<code>&#x65CB;&#x8F6C;</code>&#xFF0C;&#x548C;<code>scale</code>&#x8282;&#x70B9;&#x7684;&#x5C5E;&#x6027;&#xFF0C;&#x6709;&#x65F6;&#x7F29;&#x5199;&#x4E3A; <em>TRS&#x516C;&#x53F8;</em> :</p>
+<pre><code>&quot;node0&quot;: {
+    &quot;translation&quot;: [ 10.0, 20.0, 30.0 ],
+    &quot;rotation&quot;: [ 0.259, 0.0, 0.0, 0.966 ],
+    &quot;scale&quot;: [ 2.0, 1.0, 0.5 ]
+}
+</code></pre><p>&#x8FD9;&#x4E9B;&#x5C5E;&#x6027;&#x4E2D;&#x7684;&#x6BCF;&#x4E00;&#x4E2A;&#x90FD;&#x53EF;&#x4EE5;&#x7528;&#x6765;&#x521B;&#x5EFA;&#x77E9;&#x9635;&#xFF0C;&#x8FD9;&#x4E9B;&#x77E9;&#x9635;&#x7684;&#x4E58;&#x79EF;&#x5C31;&#x662F;&#x8282;&#x70B9;&#x7684;&#x5C40;&#x90E8;&#x53D8;&#x6362;&#xFF1A;</p>
+<ul>
+<li>&#x8FD9;&#x4E2A;<code>translation</code>&#x53EA;&#x5305;&#x542B;x&#xFF0C;y&#xFF0C;z&#x65B9;&#x5411;&#x7684;&#x5E73;&#x79FB;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x4ECE;<code>[ 10.0, 20.0, 30.0 ]</code>&#xFF0C;&#x53EF;&#x4EE5;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x8F6C;&#x6362;&#x77E9;&#x9635;&#xFF0C;&#x5C06;&#x6B64;&#x8F6C;&#x6362;&#x4F5C;&#x4E3A;&#x5176;&#x6700;&#x540E;&#x4E00;&#x5217;&#xFF0C;&#x5982;&#x56FE;4c&#x6240;&#x793A;&#x3002;</li>
+</ul>
+<p><img src="images/translationMatrix.png" alt="img"></p>
+<ul>
+<li>&#x8FD9;&#x4E2A;<code>rotation</code>&#x4F5C;&#x4E3A;&#x4E00;&#x4E2A;<a href="https://en.wikipedia.org/wiki/Quaternion" target="_blank">&#x56DB;&#x5143;&#x6570;</a>. &#x56DB;&#x5143;&#x6570;&#x7684;&#x6570;&#x5B66;&#x80CC;&#x666F;&#x8D85;&#x51FA;&#x4E86;&#x672C;&#x6559;&#x7A0B;&#x7684;&#x8303;&#x56F4;&#x3002;&#x73B0;&#x5728;&#xFF0C;&#x6700;&#x91CD;&#x8981;&#x7684;&#x4FE1;&#x606F;&#x662F;&#x56DB;&#x5143;&#x6570;&#x662F;&#x7ED5;&#x4EFB;&#x610F;&#x89D2;&#x5EA6;&#x548C;&#x4EFB;&#x610F;&#x8F74;&#x65CB;&#x8F6C;&#x7684;&#x7D27;&#x51D1;&#x8868;&#x793A;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x56DB;&#x5143;&#x6570;<code>[ 0.259, 0.0, 0.0, 0.966 ]</code>&#x63CF;&#x8FF0;&#x7ED5;x&#x8F74;&#x65CB;&#x8F6C;&#x7EA6;30&#x5EA6;&#x3002;&#x6240;&#x4EE5;&#x8FD9;&#x4E2A;&#x56DB;&#x5143;&#x6570;&#x53EF;&#x4EE5;&#x8F6C;&#x6362;&#x6210;&#x65CB;&#x8F6C;&#x77E9;&#x9635;&#xFF0C;&#x5982;&#x56FE;4d&#x6240;&#x793A;&#x3002;</li>
+</ul>
+<p><img src="images/rotationMatrix.png" alt="img"></p>
+<ul>
+<li>&#x8FD9;&#x4E2A;<code>scale</code>&#x5305;&#x542B;&#x6CBF;x&#x3001;y&#x548C;z&#x8F74;&#x7684;&#x6BD4;&#x4F8B;&#x56E0;&#x5B50;&#x3002;&#x901A;&#x8FC7;&#x4F7F;&#x7528;&#x8FD9;&#x4E9B;&#x6BD4;&#x4F8B;&#x56E0;&#x5B50;&#x4F5C;&#x4E3A;&#x77E9;&#x9635;&#x5BF9;&#x89D2;&#x7EBF;&#x4E0A;&#x7684;&#x6761;&#x76EE;&#xFF0C;&#x53EF;&#x4EE5;&#x521B;&#x5EFA;&#x76F8;&#x5E94;&#x7684;&#x77E9;&#x9635;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x6BD4;&#x4F8B;&#x56E0;&#x5B50;&#x7684;&#x6BD4;&#x4F8B;&#x77E9;&#x9635;<code>[ 2.0, 1.0, 0.5 ]</code>&#x5982;&#x56FE;4e&#x6240;&#x793A;</li>
+</ul>
+<p><img src="images/scaleMatrix.png" alt="img"></p>
+<p>&#x5F53;&#x8BA1;&#x7B97;&#x8282;&#x70B9;&#x7684;&#x6700;&#x7EC8;&#x5C40;&#x90E8;&#x53D8;&#x6362;&#x77E9;&#x9635;&#x65F6;&#xFF0C;&#x8FD9;&#x4E9B;&#x77E9;&#x9635;&#x88AB;&#x76F8;&#x4E58;&#x5728;&#x4E00;&#x8D77;&#x3002;&#x628A;&#x8FD9;&#x4E9B;&#x77E9;&#x9635;&#x6309;&#x6B63;&#x786E;&#x7684;&#x987A;&#x5E8F;&#x76F8;&#x4E58;&#x662F;&#x5F88;&#x91CD;&#x8981;&#x7684;&#x3002;&#x5C40;&#x90E8;&#x53D8;&#x6362;&#x77E9;&#x9635;&#x5FC5;&#x987B;&#x8BA1;&#x7B97;&#x4E3A;<code>M = T * R * S</code>&#xFF0C;&#x5176;&#x4E2D;<code>T</code>&#x77E9;&#x9635;&#x662F;<code>translation</code>&#x90E8;&#x5206;&#xFF0C;<code>R</code>&#x77E9;&#x9635;&#x662F;<code>rotation</code>&#x90E8;&#x5206;&#xFF0C;&#x4EE5;&#x53CA;<code>S</code>&#x77E9;&#x9635;&#x662F;<code>scale</code>&#x90E8;&#x5206;&#x3002;&#x6240;&#x4EE5;&#x8BA1;&#x7B97;&#x7684;&#x4F2A;&#x4EE3;&#x7801;&#x662F;</p>
+<pre><code>translationMatrix = createTranslationMatrix(node.translation);
+rotationMatrix = createRotationMatrix(node.rotation);
+scaleMatrix = createScaleMatrix(node.scale);
+localTransform = translationMatrix * rotationMatrix * scaleMatrix;
+</code></pre><p>&#x5BF9;&#x4E8E;&#x4E0A;&#x9762;&#x7ED9;&#x51FA;&#x7684;&#x793A;&#x4F8B;&#x77E9;&#x9635;&#xFF0C;&#x8282;&#x70B9;&#x7684;&#x6700;&#x7EC8;&#x5C40;&#x90E8;&#x53D8;&#x6362;&#x77E9;&#x9635;&#x5982;&#x56FE;4f&#x6240;&#x793A;&#x3002;</p>
+<p><img src="images/productMatrix.png" alt="img"></p>
+<p>&#x7136;&#x540E;&#x6839;&#x636E;&#x7F51;&#x683C;&#x7684;&#x9876;&#x70B9;&#x8FDB;&#x884C;&#x5E73;&#x79FB;&#xFF0C;&#x7136;&#x540E;&#x6839;&#x636E;&#x7F51;&#x683C;&#x7684;&#x5927;&#x5C0F;&#x8FDB;&#x884C;&#x7F29;&#x653E;<code>scale</code> ,<code>&#x65CB;&#x8F6C;</code>&#xFF0C;&#x548C;<code>translation</code>&#x5728;&#x8282;&#x70B9;&#x4E2D;&#x7ED9;&#x5B9A;&#x7684;&#x5C5E;&#x6027;</p>
+<p>&#x5F53;&#x8FD9;&#x4E09;&#x4E2A;&#x5C5E;&#x6027;&#x4E2D;&#x7684;&#x4EFB;&#x4F55;&#x4E00;&#x4E2A;&#x672A;&#x7ED9;&#x5B9A;&#x65F6;&#xFF0C;&#x5C06;&#x4F7F;&#x7528;&#x5355;&#x4F4D;&#x77E9;&#x9635;&#x3002;&#x7C7B;&#x4F3C;&#x5730;&#xFF0C;&#x5F53;&#x4E00;&#x4E2A;&#x8282;&#x70B9;&#x65E2;&#x4E0D;&#x5305;&#x542B;<code>matrix</code>&#x5C5E;&#x6027;&#x6216;TRS&#x5C5E;&#x6027;&#xFF0C;&#x5219;&#x5176;&#x5C40;&#x90E8;&#x53D8;&#x6362;&#x5C06;&#x6210;&#x4E3A;&#x5355;&#x4F4D;&#x77E9;&#x9635;&#x3002;</p>
+<h4 id="&#x8282;&#x70B9;&#x7684;&#x5168;&#x5C40;&#x53D8;&#x6362;">&#x8282;&#x70B9;&#x7684;&#x5168;&#x5C40;&#x53D8;&#x6362;</h4>
+<p>&#x53EF;&#x4EE5;&#x5C06;JSON&#x6587;&#x4EF6;&#x5B58;&#x50A8;&#x4E3A;4&#x7684;&#x672C;&#x5730;&#x8868;&#x793A;&#x5F62;&#x5F0F;&#xD7;4&#x77E9;&#x9635;&#x3002;&#x8FD9;&#x4E2A;<em>&#x5168;&#x7403;&#x7684;</em>&#x8282;&#x70B9;&#x7684;&#x53D8;&#x6362;&#x7531;&#x4ECE;&#x6839;&#x5230;&#x76F8;&#x5E94;&#x8282;&#x70B9;&#x7684;&#x8DEF;&#x5F84;&#x4E0A;&#x6240;&#x6709;&#x5C40;&#x90E8;&#x53D8;&#x6362;&#x7684;&#x4E58;&#x79EF;&#x7ED9;&#x51FA;&#xFF1A;</p>
+<pre><code>Structure:           local transform      global transform
+root                 R                    R
+ +- nodeA            A                    R*A
+     +- nodeB        B                    R*A*B
+     +- nodeC        C                    R*A*C
+</code></pre><p>&#x5FC5;&#x987B;&#x6307;&#x51FA;&#x7684;&#x662F;&#xFF0C;&#x5728;&#x52A0;&#x8F7D;&#x6587;&#x4EF6;&#x540E;&#xFF0C;&#x8FD9;&#x4E9B;&#x5168;&#x5C40;&#x8F6C;&#x6362;&#x53EF;&#x4EE5;<em>&#x4E0D;</em>&#x53EA;&#x8BA1;&#x7B97;&#x4E00;&#x6B21;&#x3002;&#x7A0D;&#x540E;&#xFF0C;&#x5C06;&#x5C55;&#x793A;&#x5982;&#x4F55;<em>&#x52A8;&#x753B;</em>&#x53EF;&#x4EE5;&#x4FEE;&#x6539;&#x5355;&#x4E2A;&#x8282;&#x70B9;&#x7684;&#x5C40;&#x90E8;&#x53D8;&#x6362;&#x3002;&#x8FD9;&#x4E9B;&#x4FEE;&#x6539;&#x5C06;&#x5F71;&#x54CD;&#x6240;&#x6709;&#x5B50;&#x8282;&#x70B9;&#x7684;&#x5168;&#x5C40;&#x53D8;&#x6362;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x5F53;&#x9700;&#x8981;&#x5BF9;&#x4E00;&#x4E2A;&#x8282;&#x70B9;&#x8FDB;&#x884C;&#x5168;&#x5C40;&#x53D8;&#x6362;&#x65F6;&#xFF0C;&#x5FC5;&#x987B;&#x76F4;&#x63A5;&#x4ECE;&#x6240;&#x6709;&#x8282;&#x70B9;&#x7684;&#x5F53;&#x524D;&#x5C40;&#x90E8;&#x53D8;&#x6362;&#x4E2D;&#x8FDB;&#x884C;&#x8BA1;&#x7B97;&#x3002;&#x53E6;&#x5916;&#xFF0C;&#x4F5C;&#x4E3A;&#x4E00;&#x79CD;&#x6F5C;&#x5728;&#x7684;&#x6027;&#x80FD;&#x6539;&#x8FDB;&#xFF0C;&#x5B9E;&#x73B0;&#x53EF;&#x4EE5;&#x7F13;&#x5B58;&#x5168;&#x5C40;&#x8F6C;&#x6362;&#xFF0C;&#x68C0;&#x6D4B;&#x7956;&#x5148;&#x8282;&#x70B9;&#x7684;&#x672C;&#x5730;&#x8F6C;&#x6362;&#x4E2D;&#x7684;&#x66F4;&#x6539;&#xFF0C;&#x5E76;&#x4EC5;&#x5728;&#x5FC5;&#x8981;&#x65F6;&#x66F4;&#x65B0;&#x5168;&#x5C40;&#x8F6C;&#x6362;&#x3002;&#x4E0D;&#x540C;&#x7684;&#x5B9E;&#x73B0;&#x9009;&#x9879;&#x5C06;&#x53D6;&#x51B3;&#x4E8E;&#x7F16;&#x7A0B;&#x8BED;&#x8A00;&#x548C;&#x5BA2;&#x6237;&#x673A;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x7684;&#x9700;&#x6C42;&#xFF0C;&#x56E0;&#x6B64;&#x8D85;&#x51FA;&#x4E86;&#x672C;&#x6559;&#x7A0B;&#x7684;&#x8303;&#x56F4;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="a-minimal-gltf-file.html" class="navigation navigation-prev " aria-label="Previous page: 最小的glTF文件">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="buffer-bufferviews-accessors.html" class="navigation navigation-next " aria-label="Next page: Buffer、BufferViews和Accessors">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"场景和节点","level":"1.4","depth":1,"next":{"title":"Buffer、BufferViews和Accessors","level":"1.5","depth":1,"path":"buffer-bufferviews-accessors.md","ref":"buffer-bufferviews-accessors.md","articles":[]},"previous":{"title":"最小的glTF文件","level":"1.3","depth":1,"path":"a-minimal-gltf-file.md","ref":"a-minimal-gltf-file.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["expandable-chapters"],"pluginsConfig":{"expandable-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"scene-and-nodes.md","mtime":"2021-05-25T09:47:33.875Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-05-26T02:04:54.689Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
