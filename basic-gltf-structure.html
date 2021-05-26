@@ -1,0 +1,541 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>glTF的基本结构 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="a-minimal-gltf-file.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2" data-path="basic-gltf-structure.html">
+            
+                <a href="basic-gltf-structure.html">
+            
+                    
+                    glTF的基本结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="a-minimal-gltf-file.html">
+            
+                <a href="a-minimal-gltf-file.html">
+            
+                    
+                    最小的glTF文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="scene-and-nodes.html">
+            
+                <a href="scene-and-nodes.html">
+            
+                    
+                    场景和节点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="buffer-bufferviews-accessors.html">
+            
+                <a href="buffer-bufferviews-accessors.html">
+            
+                    
+                    Buffer、BufferViews和Accessors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="simple-animation.html">
+            
+                <a href="simple-animation.html">
+            
+                    
+                    简单动画
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="animations.html">
+            
+                <a href="animations.html">
+            
+                    
+                    动画
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="simple-mesh.html">
+            
+                <a href="simple-mesh.html">
+            
+                    
+                    简单网格
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="meshes.html">
+            
+                <a href="meshes.html">
+            
+                    
+                    网格
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="materials.html">
+            
+                <a href="materials.html">
+            
+                    
+                    材料
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="simple-material.html">
+            
+                <a href="simple-material.html">
+            
+                    
+                    简单的材料
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="TexturesImagesSamplers.html">
+            
+                <a href="TexturesImagesSamplers.html">
+            
+                    
+                    纹理、图像和采样器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="SimpleTexture.html">
+            
+                <a href="SimpleTexture.html">
+            
+                    
+                    简单纹理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="AdvancedMaterial.html">
+            
+                <a href="AdvancedMaterial.html">
+            
+                    
+                    高级材料
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="simple-camera.html">
+            
+                <a href="simple-camera.html">
+            
+                    
+                    简单摄像机
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="cameras.html">
+            
+                <a href="cameras.html">
+            
+                    
+                    相机
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="simple-morph-target.html">
+            
+                <a href="simple-morph-target.html">
+            
+                    
+                    一个简单的变形目标
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="morph-targets.html">
+            
+                <a href="morph-targets.html">
+            
+                    
+                    变形目标
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="simple-skin.html">
+            
+                <a href="simple-skin.html">
+            
+                    
+                    简单皮肤
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="skins.html">
+            
+                <a href="skins.html">
+            
+                    
+                    皮肤
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >glTF的基本结构</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="gltf&#x7684;&#x57FA;&#x672C;&#x7ED3;&#x6784;">glTF&#x7684;&#x57FA;&#x672C;&#x7ED3;&#x6784;</h1>
+<p>glTF&#x7684;&#x6838;&#x5FC3;&#x662F;&#x4E00;&#x4E2A;JSON&#x6587;&#x4EF6;&#x3002;&#x8FD9;&#x4E2A;&#x6587;&#x4EF6;&#x63CF;&#x8FF0;&#x4E86;&#x4E09;&#x7EF4;&#x573A;&#x666F;&#x7684;&#x5168;&#x90E8;&#x5185;&#x5BB9;&#x3002;&#x5B83;&#x5305;&#x542B;&#x5BF9;&#x573A;&#x666F;&#x7ED3;&#x6784;&#x672C;&#x8EAB;&#x7684;&#x63CF;&#x8FF0;&#xFF0C;&#x7531;&#x5B9A;&#x4E49;&#x573A;&#x666F;&#x56FE;&#x7684;&#x8282;&#x70B9;&#x5C42;&#x6B21;&#x7ED9;&#x51FA;&#x3002;&#x573A;&#x666F;&#x4E2D;&#x663E;&#x793A;&#x7684;&#x4E09;&#x7EF4;&#x5BF9;&#x8C61;&#x662F;&#x4F7F;&#x7528;&#x9644;&#x52A0;&#x5230;&#x8282;&#x70B9;&#x7684;&#x7F51;&#x683C;&#x5B9A;&#x4E49;&#x7684;&#x3002;&#x6750;&#x8D28;&#x5B9A;&#x4E49;&#x5BF9;&#x8C61;&#x7684;&#x5916;&#x89C2;&#x3002;&#x52A8;&#x753B;&#x63CF;&#x8FF0;&#x4E86;3D&#x5BF9;&#x8C61;&#x5982;&#x4F55;&#x968F;&#x65F6;&#x95F4;&#x53D8;&#x6362;&#xFF08;&#x4F8B;&#x5982;&#xFF0C;&#x65CB;&#x8F6C;&#x5230;&#x5E73;&#x79FB;&#xFF09;&#xFF0C;&#x8499;&#x76AE;&#x5B9A;&#x4E49;&#x4E86;&#x5BF9;&#x8C61;&#x7684;&#x51E0;&#x4F55;&#x4F53;&#x5982;&#x4F55;&#x57FA;&#x4E8E;&#x9AA8;&#x67B6;&#x59FF;&#x52BF;&#x53D8;&#x5F62;&#x3002;&#x6444;&#x5F71;&#x673A;&#x63CF;&#x8FF0;&#x6E32;&#x67D3;&#x5668;&#x7684;&#x89C6;&#x56FE;&#x914D;&#x7F6E;&#x3002;</p>
+<h2 id="json&#x7ED3;&#x6784;">JSON&#x7ED3;&#x6784;</h2>
+<p>&#x573A;&#x666F;&#x5BF9;&#x8C61;&#x5B58;&#x50A8;&#x5728;JSON&#x6587;&#x4EF6;&#x4E2D;&#x7684;&#x6570;&#x7EC4;&#x4E2D;&#x3002;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x6570;&#x7EC4;&#x4E2D;&#x76F8;&#x5E94;&#x5BF9;&#x8C61;&#x7684;&#x7D22;&#x5F15;&#x8BBF;&#x95EE;&#x5B83;&#x4EEC;&#xFF1A;</p>
+<pre><code class="lang-json"><span class="hljs-string">&quot;meshes&quot;</span> : 
+[
+    { ... }
+    { ... }
+    ...
+],
+</code></pre>
+<p>&#x8FD9;&#x4E9B;&#x6307;&#x6570;&#x8FD8;&#x7528;&#x4E8E;&#x5B9A;&#x4E49;<em>&#x5173;&#x7CFB;</em>&#x5728;&#x7269;&#x4F53;&#x4E4B;&#x95F4;&#x3002;&#x4E0A;&#x9762;&#x7684;&#x793A;&#x4F8B;&#x5B9A;&#x4E49;&#x4E86;&#x591A;&#x4E2A;&#x7F51;&#x683C;&#xFF0C;&#x4E00;&#x4E2A;&#x8282;&#x70B9;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x7F51;&#x683C;&#x7D22;&#x5F15;&#x5F15;&#x7528;&#x5176;&#x4E2D;&#x4E00;&#x4E2A;&#x7F51;&#x683C;&#xFF0C;&#x4EE5;&#x6307;&#x793A;&#x7F51;&#x683C;&#x5E94;&#x9644;&#x52A0;&#x5230;&#x8BE5;&#x8282;&#x70B9;&#xFF1A;</p>
+<pre><code class="lang-json"><span class="hljs-string">&quot;nodes&quot;</span>: 
+[
+    { <span class="hljs-string">&quot;mesh&quot;</span>: <span class="hljs-number">0</span>, ... },
+    { <span class="hljs-string">&quot;mesh&quot;</span>: <span class="hljs-number">5</span>, ... },
+    ...
+]
+</code></pre>
+<p>&#x4E0B;&#x56FE;&#xFF08;&#x6539;&#x7F16;&#x81EA;<a href="https://github.com/KhronosGroup/glTF/tree/master/specification/2.0/#concepts" target="_blank">glTF&#x6982;&#x5FF5;&#x90E8;&#x5206;</a>)&#x6982;&#x8FF0;&#x4E86;glTF&#x8D44;&#x4EA7;JSON&#x90E8;&#x5206;&#x7684;&#x9876;&#x5C42;&#x5143;&#x7D20;&#xFF1A;</p>
+<p><img src="images/gltfJsonStructure.png" alt="gltfJsonStructure"></p>
+<p>&#x8FD9;&#x4E9B;&#x5143;&#x7D20;&#x5728;&#x8FD9;&#x91CC;&#x8FDB;&#x884C;&#x4E86;&#x5FEB;&#x901F;&#x603B;&#x7ED3;&#xFF0C;&#x4EE5;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;&#x6982;&#x8FF0;&#xFF0C;&#x5E76;&#x63D0;&#x4F9B;&#x4E86;&#x5230;glTF&#x89C4;&#x8303;&#x7684;&#x5404;&#x4E2A;&#x90E8;&#x5206;&#x7684;&#x94FE;&#x63A5;&#x3002;&#x4E0B;&#x9762;&#x51E0;&#x8282;&#x5C06;&#x5BF9;&#x8FD9;&#x4E9B;&#x5143;&#x7D20;&#x4E4B;&#x95F4;&#x7684;&#x5173;&#x7CFB;&#x8FDB;&#x884C;&#x66F4;&#x8BE6;&#x7EC6;&#x7684;&#x89E3;&#x91CA;&#x3002;</p>
+<ul>
+<li>&#x8FD9;&#x4E2A;<a href="https://github.com/KhronosGroup/glTF/tree/master/specification/2.0/#reference-scene" target="_blank"><code>scene</code></a>&#x662F;&#x5B58;&#x50A8;&#x5728;glTF&#x4E2D;&#x7684;&#x573A;&#x666F;&#x63CF;&#x8FF0;&#x7684;&#x5165;&#x53E3;&#x70B9;&#x3002;&#x5B83;&#x6307;&#x7684;&#x662F;<code>&#x8282;&#x70B9;</code>&#x5B9A;&#x4E49;&#x573A;&#x666F;&#x56FE;</li>
+<li>&#x8FD9;&#x4E2A;<a href="https://github.com/KhronosGroup/glTF/tree/master/specification/2.0/#reference-node" target="_blank"><code>node</code></a>&#x662F;&#x573A;&#x666F;&#x56FE;&#x5C42;&#x6B21;&#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#x8282;&#x70B9;&#x3002;&#x5B83;&#x53EF;&#x4EE5;&#x5305;&#x542B;&#x4E00;&#x4E2A;&#x53D8;&#x6362;&#xFF08;&#x4F8B;&#x5982;&#xFF0C;&#x65CB;&#x8F6C;&#x6216;&#x5E73;&#x79FB;&#xFF09;&#xFF0C;&#x5E76;&#x4E14;&#x53EF;&#x4EE5;&#x5F15;&#x7528;&#x5176;&#x4ED6;&#xFF08;&#x5B50;&#xFF09;&#x8282;&#x70B9;&#x3002;&#x6B64;&#x5916;&#xFF0C;&#x5B83;&#x53EF;&#x80FD;&#x6307;<code>&#x7F51;&#x683C;</code>&#x6216;<code>camera</code>&#x201C;&#x9644;&#x52A0;&#x201D;&#x5230;&#x8282;&#x70B9;&#x6216;<code>&#x76AE;&#x80A4;</code>&#x63CF;&#x8FF0;&#x7F51;&#x683C;&#x53D8;&#x5F62;&#x7684;</li>
+<li>&#x8FD9;&#x4E2A;<a href="https://github.com/KhronosGroup/glTF/tree/master/specification/2.0/#reference-camera" target="_blank"><code>camera</code></a>&#x5B9A;&#x4E49;&#x7528;&#x4E8E;&#x6E32;&#x67D3;&#x573A;&#x666F;&#x7684;&#x89C6;&#x56FE;&#x914D;&#x7F6E;&#x3002;</li>
+<li>A<a href="https://github.com/KhronosGroup/glTF/tree/master/specification/2.0/#reference-mesh" target="_blank"><code>mesh</code></a>&#x63CF;&#x8FF0;&#x51FA;&#x73B0;&#x5728;&#x573A;&#x666F;&#x4E2D;&#x7684;&#x51E0;&#x4F55;&#x5BF9;&#x8C61;&#x3002;&#x5B83;&#x6307;&#x7684;&#x662F;<code>&#x5B58;&#x53D6;&#x5668;</code>&#x7528;&#x4E8E;&#x8BBF;&#x95EE;&#x5B9E;&#x9645;&#x51E0;&#x4F55;&#x6570;&#x636E;&#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x4EE5;&#x53CA;<code>material</code>&#x5B9A;&#x4E49;&#x5BF9;&#x8C61;&#x5448;&#x73B0;&#x65F6;&#x7684;&#x5916;&#x89C2;&#x3002;</li>
+<li>&#x8FD9;&#x4E2A;<a href="https://github.com/KhronosGroup/glTF/tree/master/specification/2.0/#reference-skin" target="_blank"><code>skin</code></a>&#x5B9A;&#x4E49;&#x9876;&#x70B9;&#x8499;&#x76AE;&#x6240;&#x9700;&#x7684;&#x53C2;&#x6570;&#xFF0C;&#x8BE5;&#x8499;&#x76AE;&#x5141;&#x8BB8;&#x57FA;&#x4E8E;&#x865A;&#x62DF;&#x89D2;&#x8272;&#x7684;&#x59FF;&#x52BF;&#x53D8;&#x5F62;&#x7F51;&#x683C;&#x3002;&#x8FD9;&#x4E9B;&#x53C2;&#x6570;&#x7684;&#x503C;&#x4ECE;<code>&#x5B58;&#x53D6;&#x5668;</code> .</li>
+<li>&#x5B89;<a href="https://github.com/KhronosGroup/glTF/tree/master/specification/2.0/#reference-animation" target="_blank"><code>animation</code></a>&#x63CF;&#x8FF0;&#x7279;&#x5B9A;&#x8282;&#x70B9;&#x7684;&#x53D8;&#x6362;&#xFF08;&#x4F8B;&#x5982;&#x65CB;&#x8F6C;&#x6216;&#x5E73;&#x79FB;&#xFF09;&#x5982;&#x4F55;&#x968F;&#x65F6;&#x95F4;&#x53D8;&#x5316;&#x3002;</li>
+<li>&#x8FD9;&#x4E2A;<a href="https://github.com/KhronosGroup/glTF/tree/master/specification/2.0/#reference-accessor" target="_blank"><code>accessor</code></a>&#x7528;&#x4F5C;&#x4EFB;&#x610F;&#x6570;&#x636E;&#x7684;&#x62BD;&#x8C61;&#x6E90;&#x3002;&#x5B83;&#x7531;<code>&#x7F51;&#x683C;</code> ,<code>skin</code>&#xFF0C;&#x548C;<code>&#x52A8;&#x753B;</code>&#xFF0C;&#x5E76;&#x63D0;&#x4F9B;&#x51E0;&#x4F55;&#x4F53;&#x6570;&#x636E;&#x3001;&#x8499;&#x76AE;&#x53C2;&#x6570;&#x548C;&#x4E0E;&#x65F6;&#x95F4;&#x76F8;&#x5173;&#x7684;&#x52A8;&#x753B;&#x503C;&#x3002;&#x5B83;&#x6307;&#x7684;&#x662F;<a href="https://github.com/KhronosGroup/glTF/tree/master/specification/2.0/#reference-bufferView" target="_blank"><code>bufferView</code></a>&#xFF0C;&#x5B83;&#x662F;<a href="https://github.com/KhronosGroup/glTF/tree/master/specification/2.0/#reference-buffer" target="_blank"><code>buffer</code></a>&#x5305;&#x542B;&#x5B9E;&#x9645;&#x539F;&#x59CB;&#x4E8C;&#x8FDB;&#x5236;&#x6570;&#x636E;&#x7684;&#x3002;</li>
+<li>&#x8FD9;&#x4E2A;<a href="https://github.com/KhronosGroup/glTF/tree/master/specification/2.0/#reference-material" target="_blank"><code>material</code></a>&#x5305;&#x542B;&#x5B9A;&#x4E49;&#x5BF9;&#x8C61;&#x5916;&#x89C2;&#x7684;&#x53C2;&#x6570;&#x3002;&#x901A;&#x5E38;&#x6307;<code>&#x7EB9;&#x7406;</code>&#x5C06;&#x5E94;&#x7528;&#x4E8E;&#x6E32;&#x67D3;&#x51E0;&#x4F55;&#x4F53;&#x7684;&#x5BF9;&#x8C61;&#x3002;</li>
+<li>&#x8FD9;&#x4E2A;<a href="https://github.com/KhronosGroup/glTF/tree/master/specification/2.0/#reference-texture" target="_blank"><code>texture</code></a>&#x5B9A;&#x4E49;&#x4E3A;<a href="https://github.com/KhronosGroup/glTF/tree/master/specification/2.0/#reference-sampler" target="_blank"><code>sampler</code></a>&#x8FD8;&#x6709;&#x4E00;&#x4E2A;<a href="https://github.com/KhronosGroup/glTF/tree/master/specification/2.0/#reference-image" target="_blank"><code>image</code></a>. &#x8FD9;&#x4E2A;<code>&#x91C7;&#x6837;&#x5668;</code>&#x5B9A;&#x4E49;&#x7EB9;&#x7406;&#x7684;&#x65B9;&#x5F0F;<code>image</code>&#x5E94;&#x8BE5;&#x653E;&#x5728;&#x7269;&#x4F53;&#x4E0A;</li>
+</ul>
+<h2 id="&#x5BF9;&#x5916;&#x90E8;&#x6570;&#x636E;&#x7684;&#x5F15;&#x7528;">&#x5BF9;&#x5916;&#x90E8;&#x6570;&#x636E;&#x7684;&#x5F15;&#x7528;</h2>
+<p>&#x4E8C;&#x8FDB;&#x5236;&#x6570;&#x636E;&#xFF0C;&#x6BD4;&#x5982;3D&#x5BF9;&#x8C61;&#x7684;&#x51E0;&#x4F55;&#x4F53;&#x548C;&#x7EB9;&#x7406;&#xFF0C;&#x901A;&#x5E38;&#x4E0D;&#x5305;&#x542B;&#x5728;JSON&#x6587;&#x4EF6;&#x4E2D;&#x3002;&#x76F8;&#x53CD;&#xFF0C;&#x5B83;&#x4EEC;&#x5B58;&#x50A8;&#x5728;&#x4E13;&#x7528;&#x6587;&#x4EF6;&#x4E2D;&#xFF0C;JSON&#x90E8;&#x5206;&#x53EA;&#x5305;&#x542B;&#x6307;&#x5411;&#x8FD9;&#x4E9B;&#x6587;&#x4EF6;&#x7684;&#x94FE;&#x63A5;&#x3002;&#x8FD9;&#x4F7F;&#x5F97;&#x4E8C;&#x8FDB;&#x5236;&#x6570;&#x636E;&#x53EF;&#x4EE5;&#x4EE5;&#x975E;&#x5E38;&#x7D27;&#x51D1;&#x7684;&#x5F62;&#x5F0F;&#x5B58;&#x50A8;&#xFF0C;&#x5E76;&#x4E14;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;web&#x9AD8;&#x6548;&#x5730;&#x4F20;&#x8F93;&#x3002;&#x6B64;&#x5916;&#xFF0C;&#x6570;&#x636E;&#x53EF;&#x4EE5;&#x4EE5;&#x53EF;&#x76F4;&#x63A5;&#x5728;&#x6E32;&#x67D3;&#x5668;&#x4E2D;&#x4F7F;&#x7528;&#x7684;&#x683C;&#x5F0F;&#x5B58;&#x50A8;&#xFF0C;&#x800C;&#x65E0;&#x9700;&#x89E3;&#x6790;&#x3001;&#x89E3;&#x7801;&#x6216;&#x9884;&#x5904;&#x7406;&#x6570;&#x636E;&#x3002;</p>
+<p><img src="images/gltfStructure.png" alt="gltfStructure"></p>
+<p>&#x5982;&#x4E0A;&#x56FE;&#x6240;&#x793A;&#xFF0C;&#x6709;&#x4E24;&#x79CD;&#x7C7B;&#x578B;&#x7684;&#x5BF9;&#x8C61;&#x53EF;&#x80FD;&#x5305;&#x542B;&#x5230;&#x5916;&#x90E8;&#x8D44;&#x6E90;&#x7684;&#x94FE;&#x63A5;&#xFF0C;&#x5373;<code>buffers</code>&#x548C;<code>&#x56FE;&#x50CF;</code>. &#x7A0D;&#x540E;&#x5C06;&#x66F4;&#x8BE6;&#x7EC6;&#x5730;&#x89E3;&#x91CA;&#x8FD9;&#x4E9B;&#x5BF9;&#x8C61;&#x3002;</p>
+<h2 id="&#x8BFB;&#x53D6;&#x548C;&#x7BA1;&#x7406;&#x5916;&#x90E8;&#x6570;&#x636E;">&#x8BFB;&#x53D6;&#x548C;&#x7BA1;&#x7406;&#x5916;&#x90E8;&#x6570;&#x636E;</h2>
+<p>&#x8BFB;&#x53D6;&#x548C;&#x5904;&#x7406;glTF&#x8D44;&#x4EA7;&#x4ECE;&#x89E3;&#x6790;JSON&#x7ED3;&#x6784;&#x5F00;&#x59CB;&#x3002;&#x7ED3;&#x6784;&#x88AB;&#x89E3;&#x6790;&#x540E;<a href="https://github.com/KhronosGroup/glTF/tree/master/specification/2.0/#reference-buffer" target="_blank"><code>buffer</code></a>&#x548C;<a href="https://github.com/KhronosGroup/glTF/tree/master/specification/2.0/#reference-image" target="_blank"><code>image</code></a>&#x5BF9;&#x8C61;&#x5728;&#x9876;&#x5C42;&#x53EF;&#x7528;<code>&#x7F13;&#x51B2;&#x5668;</code>&#x548C;<code>images</code>&#x6570;&#x7EC4;&#x3002;&#x8FD9;&#x4E9B;&#x5BF9;&#x8C61;&#x4E2D;&#x7684;&#x6BCF;&#x4E00;&#x4E2A;&#x90FD;&#x53EF;&#x4EE5;&#x5F15;&#x7528;&#x4E8C;&#x8FDB;&#x5236;&#x6570;&#x636E;&#x5757;&#x3002;&#x4E3A;&#x4E86;&#x8FDB;&#x4E00;&#x6B65;&#x5904;&#x7406;&#xFF0C;&#x8FD9;&#x4E9B;&#x6570;&#x636E;&#x88AB;&#x8BFB;&#x5165;&#x5185;&#x5B58;&#x3002;&#x901A;&#x5E38;&#xFF0C;&#x6570;&#x636E;&#x5C06;&#x5B58;&#x50A8;&#x5728;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#x4E2D;&#xFF0C;&#x4EE5;&#x4FBF;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5F15;&#x7528;<code>&#x7F13;&#x51B2;&#x5668;</code>&#x6216;<code>image</code>&#x5B83;&#x4EEC;&#x6240;&#x5C5E;&#x7684;&#x5BF9;&#x8C61;</p>
+<h2 id="&#x4E8C;&#x8FDB;&#x5236;&#x6570;&#x636E;&#x8F93;&#x5165;buffers">&#x4E8C;&#x8FDB;&#x5236;&#x6570;&#x636E;&#x8F93;&#x5165;<code>buffers</code></h2>
+<p>A<a href="https://github.com/KhronosGroup/glTF/tree/master/specification/2.0/#reference-buffer" target="_blank"><code>buffer</code></a>&#x5305;&#x542B;&#x6307;&#x5411;&#x5305;&#x542B;&#x539F;&#x59CB;&#x4E8C;&#x8FDB;&#x5236;&#x7F13;&#x51B2;&#x533A;&#x6570;&#x636E;&#x7684;&#x6587;&#x4EF6;&#x7684;URI&#xFF1A;</p>
+<pre><code class="lang-json"><span class="hljs-string">&quot;buffer01&quot;</span>: {
+    <span class="hljs-string">&quot;byteLength&quot;</span>: <span class="hljs-number">12352</span>,
+    <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;arraybuffer&quot;</span>,
+    <span class="hljs-string">&quot;uri&quot;</span>: <span class="hljs-string">&quot;buffer01.bin&quot;</span>
+}
+</code></pre>
+<p>&#x6B64;&#x4E8C;&#x8FDB;&#x5236;&#x6570;&#x636E;&#x53EA;&#x662F;&#x4ECE;&#x7684;URI&#x8BFB;&#x53D6;&#x7684;&#x539F;&#x59CB;&#x5185;&#x5B58;&#x5757;<code>buffer</code>&#xFF0C;&#x6CA1;&#x6709;&#x5185;&#x5728;&#x7684;&#x610F;&#x4E49;&#x548C;&#x7ED3;&#x6784;&#x3002;&#x8FD9;&#x4E2A;<a href="https://github.com/KhronosGroup/glTF-Tutorials/blob/master/gltfTutorial/gltfTutorial_005_BuffersBufferViewsAccessors.md" target="_blank">&#x7F13;&#x51B2;&#x533A;&#x3001;&#x7F13;&#x51B2;&#x533A;&#x89C6;&#x56FE;&#x548C;&#x8BBF;&#x95EE;&#x5668;</a>&#x7B2C;&#x8282;&#x5C06;&#x5C55;&#x793A;&#x5982;&#x4F55;&#x7528;&#x6709;&#x5173;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x548C;&#x6570;&#x636E;&#x5E03;&#x5C40;&#x7684;&#x4FE1;&#x606F;&#x6269;&#x5C55;&#x539F;&#x59CB;&#x6570;&#x636E;&#x3002;&#x5229;&#x7528;&#x8BE5;&#x4FE1;&#x606F;&#xFF0C;&#x4F8B;&#x5982;&#xFF0C;&#x6570;&#x636E;&#x7684;&#x4E00;&#x90E8;&#x5206;&#x53EF;&#x4EE5;&#x89E3;&#x91CA;&#x4E3A;&#x52A8;&#x753B;&#x6570;&#x636E;&#xFF0C;&#x800C;&#x53E6;&#x4E00;&#x90E8;&#x5206;&#x53EF;&#x4EE5;&#x89E3;&#x91CA;&#x4E3A;&#x51E0;&#x4F55;&#x6570;&#x636E;&#x3002;&#x4EE5;&#x4E8C;&#x8FDB;&#x5236;&#x5F62;&#x5F0F;&#x5B58;&#x50A8;&#x6570;&#x636E;&#x4F7F;&#x5176;&#x80FD;&#x591F;&#x6BD4;JSON&#x683C;&#x5F0F;&#x66F4;&#x6709;&#x6548;&#x5730;&#x901A;&#x8FC7;web&#x4F20;&#x8F93;&#xFF0C;&#x5E76;&#x4E14;&#x4E8C;&#x8FDB;&#x5236;&#x6570;&#x636E;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x4F20;&#x9012;&#x5230;&#x5448;&#x73B0;&#x5668;&#xFF0C;&#x800C;&#x4E0D;&#x5FC5;&#x5BF9;&#x5176;&#x8FDB;&#x884C;&#x89E3;&#x7801;&#x6216;&#x9884;&#x5904;&#x7406;&#x3002;</p>
+<h2 id="&#x56FE;&#x50CF;&#x6570;&#x636E;&#x8F93;&#x5165;images">&#x56FE;&#x50CF;&#x6570;&#x636E;&#x8F93;&#x5165;<code>images</code></h2>
+<p>&#x5B89;<a href="https://github.com/KhronosGroup/glTF/tree/master/specification/2.0/#reference-image" target="_blank"><code>image</code></a>&#x53EF;&#x4EE5;&#x5F15;&#x7528;&#x53EF;&#x4EE5;&#x7528;&#x4F5C;&#x6E32;&#x67D3;&#x5BF9;&#x8C61;&#x7EB9;&#x7406;&#x7684;&#x5916;&#x90E8;&#x56FE;&#x50CF;&#x6587;&#x4EF6;&#xFF1A;</p>
+<pre><code class="lang-json"><span class="hljs-string">&quot;image01&quot;</span>: {
+    <span class="hljs-string">&quot;uri&quot;</span>: <span class="hljs-string">&quot;image01.png&quot;</span>
+}
+</code></pre>
+<p>&#x5F15;&#x7528;&#x4EE5;URI&#x7684;&#x5F62;&#x5F0F;&#x7ED9;&#x51FA;&#xFF0C;&#x901A;&#x5E38;&#x6307;&#x5411;PNG&#x6216;JPG&#x6587;&#x4EF6;&#x3002;&#x8FD9;&#x4E9B;&#x683C;&#x5F0F;&#x5927;&#x5927;&#x51CF;&#x5C0F;&#x4E86;&#x6587;&#x4EF6;&#x7684;&#x5927;&#x5C0F;&#xFF0C;&#x4EE5;&#x4FBF;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;web&#x9AD8;&#x6548;&#x5730;&#x4F20;&#x8F93;&#x3002;&#x5728;&#x67D0;&#x4E9B;&#x60C5;&#x51B5;&#x4E0B;<code>image</code>&#x5BF9;&#x8C61;&#x4E0D;&#x80FD;&#x5F15;&#x7528;&#x5916;&#x90E8;&#x6587;&#x4EF6;&#xFF0C;&#x4F46;&#x53EF;&#x4EE5;&#x5F15;&#x7528;&#x5B58;&#x50A8;&#x5728;<code>&#x7F13;&#x51B2;&#x5668;</code>. &#x6B64;&#x95F4;&#x63A5;&#x5BFB;&#x5740;&#x7684;&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;&#x5C06;&#x5728;<a href="https://github.com/KhronosGroup/glTF-Tutorials/blob/master/gltfTutorial/gltfTutorial_016_TexturesImagesSamplers.md" target="_blank">&#x7EB9;&#x7406;&#x3001;&#x56FE;&#x50CF;&#x548C;&#x91C7;&#x6837;&#x5668;</a>&#x7B2C;&#x8282;</p>
+<h2 id="&#x6570;&#x636E;uri&#x4E2D;&#x7684;&#x4E8C;&#x8FDB;&#x5236;&#x6570;&#x636E;">&#x6570;&#x636E;uri&#x4E2D;&#x7684;&#x4E8C;&#x8FDB;&#x5236;&#x6570;&#x636E;</h2>
+<p>&#x901A;&#x5E38;&#xFF0C;&#x5305;&#x542B;&#x5728;<code>buffer</code>&#x548C;<code>&#x5F62;&#x8C61;</code>&#x5BF9;&#x8C61;&#x5C06;&#x6307;&#x5411;&#x5305;&#x542B;&#x5B9E;&#x9645;&#x6570;&#x636E;&#x7684;&#x6587;&#x4EF6;&#x3002;&#x4F5C;&#x4E3A;&#x66FF;&#x4EE3;&#xFF0C;&#x6570;&#x636E;&#x53EF;&#x4EE5;&#x662F;<em>&#x5D4C;&#x5165;&#x7684;</em>&#x901A;&#x8FC7;&#x4F7F;&#x7528;<a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Data_URIs" target="_blank">&#x6570;&#x636E;URI</a> .</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: 简介">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="a-minimal-gltf-file.html" class="navigation navigation-next " aria-label="Next page: 最小的glTF文件">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"glTF的基本结构","level":"1.2","depth":1,"next":{"title":"最小的glTF文件","level":"1.3","depth":1,"path":"a-minimal-gltf-file.md","ref":"a-minimal-gltf-file.md","articles":[]},"previous":{"title":"简介","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["expandable-chapters"],"pluginsConfig":{"expandable-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"basic-gltf-structure.md","mtime":"2021-05-25T09:31:23.674Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-05-26T02:04:54.689Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
