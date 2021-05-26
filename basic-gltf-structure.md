@@ -66,7 +66,7 @@ A[`buffer`](https://github.com/KhronosGroup/glTF/tree/master/specification/2.0/#
 }
 ```
 
-此二进制数据只是从的URI读取的原始内存块`buffer`，没有内在的意义和结构。这个[缓冲区、缓冲区视图和访问器](https://github.com/KhronosGroup/glTF-Tutorials/blob/master/gltfTutorial/gltfTutorial_005_BuffersBufferViewsAccessors.md)第节将展示如何用有关数据类型和数据布局的信息扩展原始数据。利用该信息，例如，数据的一部分可以解释为动画数据，而另一部分可以解释为几何数据。以二进制形式存储数据使其能够比JSON格式更有效地通过web传输，并且二进制数据可以直接传递到呈现器，而不必对其进行解码或预处理。
+此二进制数据只是从的URI读取的原始内存块`buffer`，没有内在的意义和结构。这个[缓冲区、缓冲区视图和访问器]buffer-bufferviews-accessors.md)第节将展示如何用有关数据类型和数据布局的信息扩展原始数据。利用该信息，例如，数据的一部分可以解释为动画数据，而另一部分可以解释为几何数据。以二进制形式存储数据使其能够比JSON格式更有效地通过web传输，并且二进制数据可以直接传递到呈现器，而不必对其进行解码或预处理。
 
 ## 图像数据输入`images`
 
@@ -78,8 +78,8 @@ A[`buffer`](https://github.com/KhronosGroup/glTF/tree/master/specification/2.0/#
 }
 ```
 
-引用以URI的形式给出，通常指向PNG或JPG文件。这些格式大大减小了文件的大小，以便可以通过web高效地传输。在某些情况下`image`对象不能引用外部文件，但可以引用存储在`缓冲器`. 此间接寻址的详细信息将在[纹理、图像和采样器](https://github.com/KhronosGroup/glTF-Tutorials/blob/master/gltfTutorial/gltfTutorial_016_TexturesImagesSamplers.md)第节
+引用以URI的形式给出，通常指向PNG或JPG文件。这些格式大大减小了文件的大小，以便可以通过web高效地传输。在某些情况下`image`对象不能引用外部文件，但可以引用存储在`缓冲器`. 此间接寻址的详细信息将在[纹理、图像和采样器](TexturesImagesSamplers.md)第节
 
 ## 数据uri中的二进制数据
 
-通常，包含在`buffer`和`形象`对象将指向包含实际数据的文件。作为替代，数据可以是*嵌入的*通过使用[数据URI](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Data_URIs) .
+通常，包含在`buffer`和`image`对象将指向包含实际数据的文件。作为替代，数据可以是*嵌入的*通过使用[数据URI](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Data_URIs) .

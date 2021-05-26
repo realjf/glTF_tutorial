@@ -96,7 +96,7 @@
   ],
 ```
 
-有关场景和节点及其属性的详细信息将在[场景和节点](https://github.com/KhronosGroup/glTF-Tutorials/blob/master/gltfTutorial/gltfTutorial_004_ScenesNodes.md)第节
+有关场景和节点及其属性的详细信息将在[场景和节点](scene-and-nodes.md)第节
 
 ## 这个`meshes`
 
@@ -121,9 +121,9 @@ A[`mesh`](https://github.com/KhronosGroup/glTF/tree/master/specification/2.0/#re
 
 有关网格和网格基本体的详细描述，请参见[网格](https://github.com/KhronosGroup/glTF-Tutorials/blob/master/gltfTutorial/gltfTutorial_009_Meshes.md)第节
 
-## 这个`buffer` ,` 缓冲视图`，和`accessor`概念
+## 这个`buffer` ,` bufferView`，和`accessor`概念
 
-这个`buffer` ,` 缓冲视图`，和`accessor`对象提供有关网格基本体所包含的几何体数据的信息。基于具体的例子，我们很快就介绍了它们。有关这些概念的更详细的描述将在[缓冲区、缓冲区视图和访问器](https://github.com/KhronosGroup/glTF-Tutorials/blob/master/gltfTutorial/gltfTutorial_005_BuffersBufferViewsAccessors.md)第节
+这个`buffer` ,` bufferView`，和`accessor`对象提供有关网格基本体所包含的几何体数据的信息。基于具体的例子，我们很快就介绍了它们。有关这些概念的更详细的描述将在[缓冲区、缓冲区视图和访问器](buffer-bufferviews-accessors.md)
 
 ### 缓冲器
 
@@ -211,7 +211,7 @@ A[`bufferView`](https://github.com/KhronosGroup/glTF/tree/master/specification/2
   ],
 ```
 
-什么时候`mesh.primitive`渲染器可以解析底层的缓冲区视图和缓冲区，并将缓冲区的所需部分连同有关数据类型和布局的信息一起发送给渲染器。有关呈现器如何获取和处理访问器数据的更详细描述，请参见[缓冲区、缓冲区视图和访问器](https://github.com/KhronosGroup/glTF-Tutorials/blob/master/gltfTutorial/gltfTutorial_005_BuffersBufferViewsAccessors.md)节和[材料与工艺](https://github.com/KhronosGroup/glTF-Tutorials/blob/master/gltfTutorial/gltfTutorial_013_MaterialsTechniques.md)第节
+什么时候`mesh.primitive`渲染器可以解析底层的缓冲区视图和缓冲区，并将缓冲区的所需部分连同有关数据类型和布局的信息一起发送给渲染器。有关呈现器如何获取和处理访问器数据的更详细描述，请参见[缓冲区、缓冲区视图和访问器](buffer-bufferviews-accessors.md)节和[材料与工艺](https://github.com/KhronosGroup/glTF-Tutorials/blob/master/gltfTutorial/gltfTutorial_013_MaterialsTechniques.md)节
 
 ## 这个`asset`描述
 
